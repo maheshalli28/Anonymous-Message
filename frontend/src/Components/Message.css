@@ -1,0 +1,107 @@
+.container-grid {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-template-rows: 80px 1fr 20px;
+  gap: 30px;
+  height: 100vh;
+}
+
+/* Header and Footer span across both columns */
+.header, .footer {
+  grid-column: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+.sidebar { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-image {
+  max-width: 100%;
+  height: 100%;
+  
+  margin: 30px;
+  border-radius: 8px;
+}
+.sidebar-image2{
+  max-width: 50%;
+  height: 50%;
+  
+  margin-top: 0px;
+  margin-left: 40%;
+  border-radius: 8px;
+
+}
+
+.main-content {
+  background: #ffffff00;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.message-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 10px;
+}
+
+.send-btn {
+  padding: 6px 8px;
+  background: #107ddc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.thoughts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.thought-card {
+  padding: 10px;
+    background: rgba(32, 27, 22, 0.43);
+  border-radius: 6px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.thought-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.footer {
+ 
+  color: white;
+  text-align: center;
+  
+
+}
+.text-warning {
+  color: #ffc107;
+}
+.text-danger {
+  color: #dc3545;
+}
